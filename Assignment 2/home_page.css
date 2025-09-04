@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+/* need to organize my css pages so that everything is flows easier and easier to look at*/
+/* coding ideas even based off my lofi &hi-fi without methodical structure makes debugging such a mission to resolve*/
+
+
+/*had to experiment multiple ways for the banner image to fit as i imaged*/
+/*experiemented with gradient to suit colour motif*/
+.bannerhome{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0.1), rgba(0,0,0,0.1)),url(images/background.png);
+  background-size: cover;
+  background-position: top center;
+  background-size: contain;
+}
+
+/*integrated previous experience of good maps to show where the studio is located*/
+.location{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  gap:20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 20vh;
+}
+
+.details_container{
+  flex:1;
+}
+
+.location iframe{
+  flex:0 0 75%;
+  height: 150px;
+  min-width:300px;
+}
+
+
+.contents{
+  display:center;
+  padding: 30 0px;
+}
+
+.hours{
+  padding: 15 0px;
+}
+
+
+.logo_container{
+    text-align: center;
+    max-width: 150px;
+    padding: 30px 20px;
+
+}
+
+.logo1{
+  padding: 0 15px;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.copyright{
+  display:block;
+  font-size: 10;
+}
+
+.icons{
+align-items: center;
+padding: 20 20px;
+}
+
+
+.icon1{
+height: 40px;
+width: 40px;
+}
+
+.icon2{
+height: 40px;
+width: 40px;
+}
+
+.icon3{
+height: 40px;
+width: 40px;
+}
+/*experimented multiple ways to make sure that the last icon does not get cut off from the screen*/
+.icon4{
+height: 40px;
+width: 40px;
+margin-right:20px;
+}
+
+/*attempted multiple ways to fix footer overextending off the page searched online for a fix*/
+body{
+  width:100%;
+  max-width: 100%;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height:  100vh;
+  height: 100%;
+}
+
