@@ -22,7 +22,7 @@
   font-size:20px;
   font-weight: 700;
   font-family: serif;
-  color: fcefb4;
+  color: #fcefb4;
 }
 
 .logo{
@@ -32,9 +32,20 @@
   height: 50px;
 }
 
+/*alignment*/
+.nav ul{
+  display:flex;
+  align-items: center;
+  justify-content:flex-end;
+  gap:1rem;
+  margin:0;
+  padding:0;
+  list-style:none;
+  flex-wrap:wrap;
+}
 
 .navbar ul li{
-  list-style: none;
+ 
   display: inline-block;
   margin: 9 20px;
   position: relative;
@@ -52,7 +63,7 @@
     height: 3px;
     width: 0;
     background: #009688;
-    position: abolute;
+    position: absolute;
     left: 0;
     bottom: -10px;
     transition: 0.5s;
