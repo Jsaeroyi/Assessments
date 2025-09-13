@@ -99,6 +99,7 @@ body {
   min-height: 100vh;
 }
 
+/*updated background image to higher quality from unsplash*/
 body::before {
   content: "";
   position: fixed;
@@ -106,7 +107,7 @@ body::before {
   left: 0;
   width: 50%;        /* left half */
   height: 100%;
-  background: url(images/background4.jpg) no-repeat center center;
+  background: url(images/background6.jpg) no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
