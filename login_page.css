@@ -9,10 +9,11 @@ html, body{
     display:flex;
 }
 
+/* had to change to vibrant sunset pallet because it become not visably unpleasant*/
 .login{
   width: 420px;
   position:relative;
-  background: #000;
+  background: #465362;
   color: #fff;
   box-sizing: border-box;
   border-radius: 15px;
@@ -59,12 +60,12 @@ h1{
   font-size: 16px;
 }
 
-/*login button*/
+/*login button, golden glow harmony pallet changed background of button as well consistent with template #011936*/
 .login input[type="submit"]{
   border: none;
   outline: none;
   height: 40px;
-  background:  #f9dc5c;
+  background:  #011936;
   color: #fff;
   font-size: 18px;
   border-radius: 20px;

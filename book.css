@@ -61,11 +61,11 @@ very time consuming*/
   outline: none;
 }
 
-/* Button */
+/* Button changed background of button to #011936 agreeing with recommendation*/
 .bookingdetails button {
   width: 100%;
   padding: 0.9rem;
-  background: #f9dc5c;
+  background: #011936;
   color: white;
   font-size: 1.1rem;
   font-weight: 600;

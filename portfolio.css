@@ -1,0 +1,130 @@
+/* Page banner gradient (over image pattern) */
+.bannerportfolio {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/background2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.portfolio_title {
+  font-size: 2.5rem;       
+  font-weight: 800;
+  text-align: center;
+  margin: 2rem 0 1rem;    
+  color: #303030;          
+}
+
+/*colour pallet consistent with theme*/
+body {
+  background: #fdf8e1; 
+}
+
+/* Container */
+.portfolio {
+  max-width: 1200px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+}
+
+.portfolio_header {
+  display: grid;
+  gap: 0.75rem;
+  align-items: center;
+  justify-items: start;
+  margin-bottom: 1rem;
+}
+
+.portfolio_intro {
+  color: #666;         
+  margin: 0.25rem 0 0.5rem;
+}
+
+.portfolio_filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter {
+  appearance: none;
+  border: 1px solid #717171;      /* header gray */
+  background: #fcefb4;            /* brand beige */
+  color: #2e2e2e;                 /* charcoal text */
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+}
+.filter:hover { transform: translateY(-1px); }
+.filter.is-active {
+  background: #f9dc5c;            /* primary CTA yellow */
+  color: #000;
+  border-color: #303030;          /* footer dark gray */
+}
+
+/* Responsive gallery grid, had to research and learn unsure if it was worth my time */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 1rem;
+}
+
+/* Each shot */
+.shot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #000;
+}
+
+/* was not filling properly unsure what the coding error was multiple trial and error Images fill the card */
+.shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3; 
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+/* Subtle overlay caption gone off on a tangent again... do not want to get this right again */
+.shot_caption {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  margin: 0;
+  padding: 4px 8px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(48,48,48,0.7);
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Hover effect */
+.shot:hover img {
+  transform: scale(1.03);
+}
+
+/* the necessity of !important  Zzzz */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Small screens polish */
+@media (max-width: 520px) {
+  .portfolio_intro { font-size: 14px; }
+  .filter { padding: 6px 10px; }
+}

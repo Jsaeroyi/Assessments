@@ -9,11 +9,16 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   /*changed padding too big*/
-  padding:6px 12px;
+  padding:0.5rem 1rem;
+  /* changed to rem so units adjust to size removed px*/
   margin-top: auto;
   flex-direction:row;
-  min-height: 40px;
-  gap: 20px;
+  min-height: 32px;
+  gap: 1rem;
+  /*rem change again*/
+  margin-top: auto;
+  flex-shrink:0;
+  /*spent so much time cause the footer floated, had to diagnose and trouble shoot a lot of different ways found shrink to be the solution*/
 }
 
 .logo1{
@@ -43,3 +48,9 @@
   width: 40px;
   object-fit: contain;
 }
+
+/*changed opening hours as recommended by kyle good idea*/
+.hours h1 {
+  font-size: 1rem;  
+  margin: 0;
+}        
