@@ -1,24 +1,27 @@
 /* Page banner gradient (over image pattern) */
 .bannerportfolio {
+  position: relative;
   width: 100%;
-  height: 50vh;
-  background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/background2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 300px; 
+  background: url("images/your-banner.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
 }
 
 .portfolio_title {
-  font-size: 2.5rem;       
-  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #303030;
+  margin: 0 0 0.5rem 0;  
   text-align: center;
-  margin: 2rem 0 1rem;    
-  color: #303030;          
 }
 
 /*colour pallet consistent with theme*/
 body {
-  background: #fdf8e1; 
+  background: #ffffff; 
 }
 
 /* Container */
@@ -37,21 +40,27 @@ body {
 }
 
 .portfolio_intro {
-  color: #666;         
-  margin: 0.25rem 0 0.5rem;
+  text-align: center;
+  margin: 0.5rem auto 1rem auto; 
+  font-size: 1.1rem;
+  max-width: 700px;
 }
 
 .portfolio_filters {
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  justify-content: center;   
+  align-items: center;       
+  gap: 1rem;                 
+  margin: 1.5rem auto;       
+  width: 100%;               
+  text-align: center;
 }
 
 .filter {
   appearance: none;
-  border: 1px solid #717171;      /* header gray */
-  background: #fcefb4;            /* brand beige */
-  color: #2e2e2e;                 /* charcoal text */
+  border: 1px solid #717171;     
+  background: #fcefb4;           
+  color: #2e2e2e;                 
   padding: 6px 12px;
   border-radius: 12px;
   font-weight: 600;
@@ -73,7 +82,6 @@ body {
   margin-top: 1rem;
 }
 
-/* Each shot */
 .shot {
   position: relative;
   overflow: hidden;
@@ -112,19 +120,3 @@ body {
   transform: scale(1.03);
 }
 
-/* the necessity of !important  Zzzz */
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-/* Small screens polish */
-@media (max-width: 520px) {
-  .portfolio_intro { font-size: 14px; }
-  .filter { padding: 6px 10px; }
-}

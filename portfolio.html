@@ -28,10 +28,12 @@
   </div>
 
 
-  <section class="banner bannerportfolio" role="img" aria-label="Selected works from LensCraft Studio"></section>
+  <section class="banner bannerportfolio" role="img" aria-label="Selected works from LensCraft Studio">
+     <h2 class="portfolio_title">The Art of LensCraft</h2>
+  </section>
 
   <main class="portfolio">
-      <h1 class="portfolio_title">Our Work</h1>
+     
  
     
     <header class="portfolio_header">
@@ -105,25 +107,5 @@
     </div>
   </div>
 
-  <!-- not sure if i want to use -->
-  <script>
-    (function () {
-      const buttons = document.querySelectorAll('.filter');
-      const shots = document.querySelectorAll('.shot');
-
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          buttons.forEach(b => b.classList.remove('is-active'));
-          btn.classList.add('is-active');
-          const f = btn.dataset.filter;
-
-          shots.forEach(s => {
-            const match = f === 'all' || s.dataset.category === f;
-            s.style.display = match ? '' : 'none';
-          });
-        });
-      });
-    })();
-  </script>
 </body>
 </html>

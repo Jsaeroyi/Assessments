@@ -40,7 +40,6 @@ very time consuming*/
   color: #444;
 }
 
-/* Inputs, selects, textarea */
 .bookingdetails input,
 .bookingdetails select,
 .bookingdetails textarea {
@@ -105,7 +104,7 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;        /* left half */
+  width: 50%;       
   height: 100%;
   background: url(images/background6.jpg) no-repeat center center;
   background-size: cover;
@@ -117,7 +116,7 @@ body::after {
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;        /* right half */
+  width: 50%;       
   height: 100%;
   background: url(images/background5.jpg) no-repeat center center;
   background-size: cover;

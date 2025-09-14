@@ -1,76 +1,96 @@
 .aboutus_banner {
   width: 100%;
-  height: 320px;                              
+  min-height: 50vh;   
   background: url("images/background7.jpg") center/cover no-repeat;
-  margin: 0 0 2rem 0;                        
+  margin: 0 0 2rem 0;
 }
+
+/*so much time wasting on getting the height right*/
 
 .aboutus_title {
   text-align: center;
   font-size: clamp(1.8rem, 2.5vw, 2.2rem);
-  margin: 2rem 0 1rem;
+  margin: 1rem 0 0.5rem;   /*refixed size of title*/
   color: #303030;
 }
 
-/* --- Content container --- */
 .aboutus {
-  max-width: 960px;                           
-  margin: 0 auto 3rem;
-  padding: 24px;
-  border: 2px solid #fcefb4;                  
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 20px;
+  /* fiddled around with border */
   border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);    
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   box-sizing: border-box;
 }
 
-/* Optional inner layout if you later add an image block next to text */
-.aboutus_inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+.aboutus-content {
+  display: flex;
+  justify-content: space-between;   
+  align-items: flex-start;          
+  gap: 2rem;
 }
 
-/* Headings & text */
-.aboutus h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: clamp(1.6rem, 2.2vw, 2rem);
-  color: #303030;                              /* footer dark grey for contrast */
+
+.aboutus-text {
+  flex: 1 1 55%;   
 }
 
-.aboutus p {
-  margin: 0.5rem 0 0 0;
+.aboutus-text p {
   line-height: 1.6;
   color: #2e2e2e;
-  font-size: clamp(0.95rem, 1.05vw, 1.05rem);
+  font-size: 1rem;
+  margin: 0;
 }
 
-/* If you add links inside About */
-.aboutus a {
-  color: #009688;                              /* your teal accent */
-  text-decoration: underline;
-}
-.aboutus a:hover {
-  text-decoration: none;
+
+.contact-form {
+  flex: 1 1 40%;
+  background: #fff;
+  padding: 16px;
+  border: 2px solid #fcefb4;   
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* --- Responsive upgrades --- */
-@media (min-width: 900px) {
-  /* If you add a media column later, this will auto 2-column */
-  .aboutus_inner {
-    grid-template-columns: 1.2fr 0.8fr;        /* text left, media right */
-    align-items: start;
-  }
+.contact-form h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #303030;
 }
 
-/* --- Optional: a neat media block if you insert an <img> later --- */
-.aboutus_media {
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-.aboutus_media img {
+.contact-form label {
   display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #303030;
+}
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
-  height: auto;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #717171;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.contact-form button:hover {
+  background-color: #009688;
 }

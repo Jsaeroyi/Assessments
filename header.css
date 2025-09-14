@@ -22,6 +22,15 @@
 /* used https://coolors.co/palettes/trending to experiement what colour palettes could be useful*/
 }
 
+.companyname {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 8px;
+
+}
+
+
+
 .logo{
   padding: 0 20px;
   width:auto;
